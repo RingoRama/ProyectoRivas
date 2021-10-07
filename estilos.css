@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    background: url(https://i.pinimg.com/originals/ce/33/d1/ce33d146a6c6e37157cbb2b1611ca2b5.jpg) no-repeat center/100%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    min-height: 100%;
+}
+
+img {
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+img:hover{
+    transform: scale(1.02, 1.02);
+    z-index: 9;
+}
+
+.titulos {
+font-size: 25px;
+font-family: Candara;
+font-style:oblique;
+padding-bottom: auto;
+}
+
+.texto {
+    font-size: 18px;
+    font-family: Candara Light;
+}
+
+.link{
+    color: rgba(130, 211, 231, 0.986);
+    text-decoration: none;
+}
+
+.link-nav {
+    color: rgba(224, 224, 224, 0.986);
+    text-decoration: none;
+    font-size: 22px;
+    font-family: Candara Light;
+}
+
+.link:hover{
+    text-decoration: underline;
+}
+
+.link-nav:hover{
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
+
+.cuerpo > * {
+    box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 10px;
+    background-color: rgb(37, 37, 37);
+    opacity: 0.7;
+    padding: 10px;
+    color:lemonchiffon;
+    text-align: center;
+}
+.cuerpo {
+    display: grid;
+    gap: 5px;
+    grid-template: 
+    "header header header" 140px 
+    "nav article1 article1" auto  
+    "nav article2 article2" auto 
+    "nav article3 article3" auto
+    "footer footer footer" 55px /
+    200px auto;
+}
+
+.header {
+    grid-area: header;
+    background-color: rgba(10, 10, 10, 0.75);
+    font-size: 2.5rem;
+    font-style:inherit;
+    font-family: Ephesis;
+    color: lemonchiffon;
+    text-align: center;
+}
+.header-sub {
+    font-size:medium;
+    font-style:inherit;
+    font-family: Ephesis;
+    color: lemonchiffon;
+    
+}
+.nav {
+    grid-area: nav;
+    text-align: left;
+}
+.footer {
+    grid-area: footer;
+    text-align: center;
+    height: 80px;
+}
+.nav:hover{
+    transform: scale(1.02, 1.02);
+    z-index: 9;
+}
+.article1 {
+    grid-area: article1;
+    text-align: left;
+}
+.article2 {
+    grid-area: article2;
+    text-align: left;
+}
+.article3 {
+    grid-area: article3;
+    text-align:left;
+}
+
+.footer-texto {
+    text-align: center;
+    font-family: Candara Light;
+    font-size: 19px;
+}
+.footer-subtexto {
+    text-align: center;
+    font-family: Candara Light;
+    font-size: 12px;
+}
+
+.link-foot{
+    color: rgba(224, 224, 224, 0.986);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Candara Light;
+}
+.link-foot:hover{
+    text-decoration: underline;
+    text-decoration-style: solid;
+}
